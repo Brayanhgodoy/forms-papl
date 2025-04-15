@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Cadastro - Piloto F1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ficha de Cadastro - Piloto de Fórmula 1</h1>
+    <form id="fichaPiloto">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label>Nome Completo: <input type="text" name="nome" required /></label>
+        <label>Data de Nascimento: <input type="date" name="nascimento" required /></label>
+        <label>Nacionalidade: <input type="text" name="nacionalidade" required /></label>
+        <label>Gênero: 
+          <select name="genero" required>
+            <option value="">Selecione</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Outro</option>
+          </select>
+        </label>
+        <label>Telefone: <input type="tel" name="telefone" required /></label>
+        <label>Email: <input type="email" name="email" required /></label>
+        <label>Altura (cm): <input type="number" name="altura" required /></label>
+        <label>Peso (kg): <input type="number" name="peso" required /></label>
+        <label>Tipo sanguíneo: <input type="text" name="sangue" required /></label>
+        <label>Endereço: <input type="text" name="endereco" required /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Habilidades Técnicas</legend>
+        <label>Experiência em F1 (anos): <input type="number" name="experiencia" required /></label>
+        <label>Equipe Atual: <input type="text" name="equipe" required /></label>
+        <label>Número do Carro: <input type="number" name="numero" required /></label>
+        <label>Pontuação Atual no Campeonato: <input type="number" name="pontos" required /></label>
+        <label>Categoria Anterior: <input type="text" name="categoriaAnterior" /></label>
+        <label>Tempo médio por volta (s): <input type="number" step="0.01" name="tempoVolta" required /></label>
+        <label>Condições preferidas de pista: <input type="text" name="condicoes" /></label>
+        <label>Estilo de direção: <input type="text" name="estilo" /></label>
+        <label>Comportamento sob pressão: <input type="text" name="pressao" /></label>
+        <label>Já teve acidentes graves? <input type="text" name="acidentes" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados Complementares</legend>
+        <label>Nome do treinador: <input type="text" name="treinador" /></label>
+        <label>Treinamento físico (horas/semana): <input type="number" name="treino" /></label>
+        <label>Simulador usado: <input type="text" name="simulador" /></label>
+        <label>Patrocinadores principais: <input type="text" name="patrocinadores" /></label>
+        <label>Ídolo na F1: <input type="text" name="idolo" /></label>
+        <label>Primeira corrida na F1 (ano): <input type="number" name="estreia" /></label>
+        <label>Quantos pódios conquistou? <input type="number" name="podios" /></label>
+        <label>Quantas vitórias? <input type="number" name="vitorias" /></label>
+        <label>Redes sociais: <input type="text" name="redes" /></label>
+        <label>Comentário adicional: <textarea name="comentario"></textarea></label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
